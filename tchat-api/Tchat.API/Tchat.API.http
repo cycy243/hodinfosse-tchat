@@ -1,0 +1,6 @@
+@Tchat.API_HostAddress = http://localhost:5058
+
+GET {{Tchat.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="automapper" Version="13.0.1" />
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="fluentassertions" Version="6.12.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Tchat.API.Persistence\Tchat.API.Data.Persistence.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Data.Repository.Database.Test.Utils\Tchat.Api.Data.Repository.Database.Test.Utils.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Domain\Tchat.Api.Domain.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Models\Tchat.Api.Models.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Service.Auth\Tchat.Api.Services.Auth.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Services.Utils.Tests\Tchat.Api.Services.Utils.Tests.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Services\Tchat.Api.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+
+</Project>

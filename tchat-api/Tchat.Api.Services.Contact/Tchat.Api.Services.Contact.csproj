@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tchat.Api.Data.Repository\Tchat.Api.Data.Repository.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Mappers\Tchat.Api.Mappers.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Services\Tchat.Api.Services.csproj" />
+  </ItemGroup>
+
+</Project>

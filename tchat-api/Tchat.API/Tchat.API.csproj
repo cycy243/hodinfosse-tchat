@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>63b744e5-d307-465c-ba6c-74cf3d87af6e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Tchat.API.Persistence\Tchat.API.Data.Persistence.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Data.Repository.DataBase\Tchat.Api.Data.Repository.DataBase.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Data.Repository\Tchat.Api.Data.Repository.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Exceptions\Tchat.Api.Exceptions.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Mappers\Tchat.Api.Mappers.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Service.Auth\Tchat.Api.Services.Auth.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Services.Contact\Tchat.Api.Services.Contact.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Services.Messages\Tchat.Api.Services.Messages.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Services.User\Tchat.Api.Services.User.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Services.Utils\Tchat.Api.Services.Utils.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Services\Tchat.Api.Services.csproj" />
+  </ItemGroup>
+
+</Project>

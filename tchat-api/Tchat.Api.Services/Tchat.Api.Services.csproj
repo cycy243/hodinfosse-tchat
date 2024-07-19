@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tchat.API.Args\Tchat.API.Args.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Domain\Tchat.Api.Domain.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Exceptions\Tchat.Api.Exceptions.csproj" />
+    <ProjectReference Include="..\Tchat.Api.Models\Tchat.Api.Models.csproj" />
+  </ItemGroup>
+
+</Project>
