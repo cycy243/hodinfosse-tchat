@@ -33,10 +33,16 @@ import FormField from '@/components/form/FormField.vue'
 import type RegisterDto from '@/modules/dto/RegisterDto'
 import type UserRepository from '@/modules/repository/UserRepository'
 
+import * as keys from '@/utils/injectionKeys'
+
 export default defineComponent({
   name: 'RegisterView',
   components: { FormField },
-  inject: ['UserRepository'],
+  inject: {
+    UserRepository: {
+      from: keys.userRepositoryKey
+    }
+  },
   data() {
     return {
       schema: {

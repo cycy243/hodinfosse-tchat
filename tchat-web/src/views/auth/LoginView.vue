@@ -30,12 +30,18 @@ import FormField from '@/components/form/FormField.vue'
 
 import { mapActions } from 'pinia'
 import useAuthStore from '@/stores/auth'
-import type UserRepository from '@/modules/repository/UserRepository'
+import UserRepository from '@/modules/repository/UserRepository'
+
+import * as keys from '@/utils/injectionKeys'
 
 export default defineComponent({
   name: 'LoginView',
   components: { VForm, FormField },
-  inject: ['UserRepository'],
+  inject: {
+    UserRepository: {
+      from: keys.userRepositoryKey
+    }
+  },
   data() {
     return {
       schema: {
