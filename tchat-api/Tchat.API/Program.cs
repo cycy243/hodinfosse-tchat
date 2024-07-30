@@ -33,8 +33,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-  options.UseSqlServer(builder.Configuration.GetConnectionString("TchatContext")));
+if(builder.Environment.IsDevelopment())
+{
+    builder.Services.AddDbContext<ApplicationDbContext>(options =>
+      options.UseSqlServer(builder.Configuration.GetConnectionString("TchatContext")));
+}
+else
+{
+    builder.Services.AddDbContext<ApplicationDbContext>(options =>
+      options.UseNpgsql(builder.Configuration.GetConnectionString("TchatContext")));
+}
 
 builder.Services.AddHttpContextAccessor();
 
@@ -108,11 +116,8 @@ builder.Services
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
