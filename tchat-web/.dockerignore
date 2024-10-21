@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.docker
+
+README.md
+
+/node_modules
+/dist
+/html
+/coverage
+/cypress
+
+/.vscode

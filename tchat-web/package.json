@@ -11,6 +11,7 @@
     "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
     "build-only": "vite build",
+    "build-docker": "vite build --mode docker",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
@@ -19,6 +20,7 @@
   },
   "dependencies": {
     "@vee-validate/rules": "^4.13.1",
+    "dotenv": "^16.4.5",
     "pinia": "^2.1.7",
     "pusher-js": "^8.4.0-rc2",
     "redaxios": "^0.5.1",
