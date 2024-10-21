@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Tchat.API.Persistence;
 using Tchat.Api.Mappers;
 using Tchat.Api.Data.Repository.DataBase;
 using Tchat.Api.Services.Auth;
@@ -14,10 +13,11 @@ using Tchat.Api.Services.Messages.Utils;
 using Tchat.Api.Services.Messages;
 using Tchat.Api.Exceptions;
 using Tchat.Api.Services;
-using Tchat.API.Data.Persistence.User;
 using Tchat.Api.Services.Contact;
 using Tchat.API.Policies.Requirement;
 using Tchat.API.Policies;
+using Tchat.API.Persistence;
+using Tchat.API.Data.Persistence.User;
 
 var builder = WebApplication.CreateBuilder(args);
 

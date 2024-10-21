@@ -19,9 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Tchat.API.Persistence\Tchat.API.Data.Persistence.csproj" />
     <ProjectReference Include="..\Tchat.Api.Data.Repository.Database.Test.Utils\Tchat.Api.Data.Repository.Database.Test.Utils.csproj" />
     <ProjectReference Include="..\Tchat.Api.Data.Repository.DataBase\Tchat.Api.Data.Repository.DataBase.csproj" />
+    <ProjectReference Include="..\Tchat.API.Persistence\Tchat.API.Data.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>

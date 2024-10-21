@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tchat.API", "Tchat.API\Tchat.API.csproj", "{F67347D0-4A2A-416D-957D-3AC7875C9470}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tchat.API.Data.Persistence", "..\Tchat.API.Persistence\Tchat.API.Data.Persistence.csproj", "{A3E654C7-9389-44D3-A03D-70ACE567C96C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tchat.API.Data.Persistence", "Tchat.API.Persistence\Tchat.API.Data.Persistence.csproj", "{A3E654C7-9389-44D3-A03D-70ACE567C96C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tchat.Api.Domain", "Tchat.Api.Domain\Tchat.Api.Domain.csproj", "{C8E93050-5593-4385-A9C1-F740713123DC}"
 EndProject

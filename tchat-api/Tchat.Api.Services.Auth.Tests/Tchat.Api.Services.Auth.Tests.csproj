@@ -19,10 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Tchat.API.Persistence\Tchat.API.Data.Persistence.csproj" />
     <ProjectReference Include="..\Tchat.Api.Data.Repository.Database.Test.Utils\Tchat.Api.Data.Repository.Database.Test.Utils.csproj" />
     <ProjectReference Include="..\Tchat.Api.Domain\Tchat.Api.Domain.csproj" />
     <ProjectReference Include="..\Tchat.Api.Models\Tchat.Api.Models.csproj" />
+    <ProjectReference Include="..\Tchat.API.Persistence\Tchat.API.Data.Persistence.csproj" />
     <ProjectReference Include="..\Tchat.Api.Service.Auth\Tchat.Api.Services.Auth.csproj" />
     <ProjectReference Include="..\Tchat.Api.Services.Utils.Tests\Tchat.Api.Services.Utils.Tests.csproj" />
     <ProjectReference Include="..\Tchat.Api.Services\Tchat.Api.Services.csproj" />

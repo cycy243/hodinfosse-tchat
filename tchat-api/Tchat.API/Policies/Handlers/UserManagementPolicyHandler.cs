@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using System.Linq;
 using System.Security.Claims;
-using Tchat.API.Data.Persistence.User;
 using Tchat.API.Policies.Requirement;
 
 namespace Tchat.API.Policies.Handlers

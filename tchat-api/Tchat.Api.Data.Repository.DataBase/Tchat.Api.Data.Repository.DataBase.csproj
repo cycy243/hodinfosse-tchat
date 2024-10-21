@@ -7,10 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Tchat.API.Persistence\Tchat.API.Data.Persistence.csproj" />
     <ProjectReference Include="..\Tchat.Api.Data.Repository\Tchat.Api.Data.Repository.csproj" />
     <ProjectReference Include="..\Tchat.Api.Domain\Tchat.Api.Domain.csproj" />
     <ProjectReference Include="..\Tchat.Api.Exceptions\Tchat.Api.Exceptions.csproj" />
+    <ProjectReference Include="..\Tchat.API.Persistence\Tchat.API.Data.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
