@@ -2,9 +2,6 @@
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 
-EXPOSE 5000
-EXPOSE 5001
-
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG TARGETARCH
 WORKDIR /source
@@ -57,5 +54,7 @@ ENV BD_CONNECTIONSTRING = ""
 ENV ASPNETCORE_ENVIRONMENT = ""
 ENV GOOGLE_OAUHT_CLIENT_ID = ""
 ENV GOOGLE_OAUHT_CLIENT_SECRET = ""
+
+EXPOSE 80
 
 ENTRYPOINT ["dotnet", "Tchat.API.dll"]
