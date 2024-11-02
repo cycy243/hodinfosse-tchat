@@ -23,6 +23,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Configuration.AddEnvironmentVariables();
+
 var confiugration = builder.Configuration;
 
 var jwtConfiguration = new JwtConfiguration();
